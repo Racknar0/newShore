@@ -1,7 +1,12 @@
+import { useContext } from 'react';
+import { GlobalContext } from '../../contexts/GobalContext';
+
 import Card from '../Card/Card';
 import './Main.css';
 
 const Main = () => {
+    const { cards, destinations } = useContext(GlobalContext);
+
     return (
         <main className="main">
             <div className="main__menu--mobile">
@@ -34,9 +39,12 @@ const Main = () => {
                 <p className="main__title">Offers</p>
 
                 <div className="card__container">
-                    <Card />
-                    <div className="card"></div>
-                    <div className="card"></div>
+                    {cards.map((card) => (
+                        <Card
+                            key={card.id}
+                            card={card} /*  setDestinations={setDestinations} */
+                        />
+                    ))}
                 </div>
                 <div className="main__menu">
                     <p className="main__menu__title">Menu</p>
@@ -64,7 +72,7 @@ const Main = () => {
                     </div>
                 </div>
                 <div className="destination">
-                    <p className="destination__text">Silent Hill</p>
+                    <p className="destination__text">{destinations}</p>
                     <p className="destination__label">Chosen Destination</p>
                 </div>
             </div>

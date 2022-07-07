@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 
+/* IMAGE IMPORTS */
 import twitter from '../../assets/img/twitterpng.png'
 import facebook from '../../assets/img/facebook.svg'
 import instagram from '../../assets/img/instagram.svg'

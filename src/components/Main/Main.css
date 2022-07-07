@@ -64,6 +64,7 @@
     background-color: #1a789d;
     border-radius: 17px;
     position: relative;
+    cursor: pointer;
 }
 
 .card__black{

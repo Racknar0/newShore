@@ -1,20 +1,27 @@
-import moscow from '../../assets/img/moscow.jpg';
-import honduras from '../../assets/img/honduras.jpg';
-import puerto from '../../assets/img/puerto-rico.jpg';
+import { useContext } from 'react';
+import { GlobalContext } from '../../contexts/GobalContext';
 
+const sites = require.context('../../assets/img', true, /\.(png|jpe?g|svg)$/i);
 
-const Card = () => {
+const Card = ({ card }) => {
 
+    /* declaration contexts */
+    const { setDestinations } = useContext(GlobalContext);
+    const { Text, price, image, destination } = card;
 
-    
-  return (
-    <div className="card">
-      <img className='card__image' src={moscow} alt="" />
-      <p className='card__title'>Trip to moscow</p>
-      <p className='card__price'>Price $600,86</p>
-      <div className='card__black'></div>
-    </div>
-  )
-}
+    return (
+        <div
+            className="card"
+            onClick={() => {
+                setDestinations(destination);
+            }}
+        >
+            <img className="card__image" src={sites(`./${image}`)} alt="" />
+            <p className="card__title">{Text}</p>
+            <p className="card__price">Price ${price}</p>
+            <div className="card__black"></div>
+        </div>
+    );
+};
 
-export default Card
+export default Card;
