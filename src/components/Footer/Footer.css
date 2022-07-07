@@ -1,0 +1,91 @@
+.footer{
+    background-color: #0a2463;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__SocialContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 1200px;
+
+}
+
+.footer__text{
+    font-size: 1.2rem;
+    font-family: ArabotoMedium;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.footer__logosContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.footer__infoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px){
+    .footer__infoContainer{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem auto;
+        max-width: 1200px;
+    }
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    .footer__info{
+        align-items: flex-start;
+    }
+}
+    
+
+.footer__titleInfo{
+    font-size: 1.2rem;
+    font-family: ArabotoMedium;
+    color: #ff353e;
+}
+
+
+.footer__info1{
+    color: #fff;
+    font-size: 1rem;
+    font-family: ArabotoMedium;
+}
+
+.footer__infoText{
+    font-size: 1.1rem;
+    font-family: ArabotoMedium;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer__infoText:hover{
+    text-decoration: underline;
+}

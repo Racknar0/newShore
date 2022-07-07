@@ -1,3 +1,4 @@
+import Card from '../Card/Card';
 import './Main.css';
 
 const Main = () => {
@@ -6,25 +7,25 @@ const Main = () => {
             <div className="main__menu--mobile">
                 <p className="main__menu--mobile__title">Menu</p>
                 <div className="main__menu--mobile__SContainer">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <i className="bi bi-caret-right-fill"></i>
                     <p className="main__menu--mobile__text">Check-in</p>
                 </div>
                 <div className="main__menu--mobile__SContainer">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <i className="bi bi-caret-right-fill"></i>
                     <p className="main__menu--mobile__text">
                         Manage My Booking
                     </p>
                 </div>
                 <div className="main__menu--mobile__SContainer">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <i className="bi bi-caret-right-fill"></i>
                     <p className="main__menu--mobile__text">Search</p>
                 </div>
                 <div className="main__menu--mobile__SContainer">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <i className="bi bi-caret-right-fill"></i>
                     <p className="main__menu--mobile__text">Destinations</p>
                 </div>
                 <div className="main__menu--mobile__SContainer">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <i className="bi bi-caret-right-fill"></i>
                     <p className="main__menu--mobile__text">Members</p>
                 </div>
             </div>
@@ -33,32 +34,32 @@ const Main = () => {
                 <p className="main__title">Offers</p>
 
                 <div className="card__container">
-                    <div className="card"></div>
+                    <Card />
                     <div className="card"></div>
                     <div className="card"></div>
                 </div>
                 <div className="main__menu">
                     <p className="main__menu__title">Menu</p>
                     <div className="main__menu--mobile__SContainer">
-                        <i class="bi bi-caret-right-fill"></i>
+                        <i className="bi bi-caret-right-fill"></i>
                         <p className="main__menu--mobile__text">Check-in</p>
                     </div>
                     <div className="main__menu--mobile__SContainer">
-                        <i class="bi bi-caret-right-fill"></i>
+                        <i className="bi bi-caret-right-fill"></i>
                         <p className="main__menu--mobile__text">
                             Manage My Booking
                         </p>
                     </div>
                     <div className="main__menu--mobile__SContainer">
-                        <i class="bi bi-caret-right-fill"></i>
+                        <i className="bi bi-caret-right-fill"></i>
                         <p className="main__menu--mobile__text">Search</p>
                     </div>
                     <div className="main__menu--mobile__SContainer">
-                        <i class="bi bi-caret-right-fill"></i>
+                        <i className="bi bi-caret-right-fill"></i>
                         <p className="main__menu--mobile__text">Destinations</p>
                     </div>
                     <div className="main__menu--mobile__SContainer">
-                        <i class="bi bi-caret-right-fill"></i>
+                        <i className="bi bi-caret-right-fill"></i>
                         <p className="main__menu--mobile__text">Members</p>
                     </div>
                 </div>
