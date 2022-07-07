@@ -1,11 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: ArabotoBlack;
+  src: url('./assets/fonts/Araboto\ Black\ 400.ttf');
 }
+@font-face {
+  font-family: ArabotoMedium;
+  src: url('./assets/fonts/Araboto\ Medium\ 400.ttf');
+}
+@font-face {
+  font-family: ArabotoNormal;
+  src: url('./assets/fonts/Araboto\ Normal\ 400.ttf');
+}
+@font-face {
+  font-family: ArabotoThin;
+  src: url('./assets/fonts/Araboto\ Thin\ 400.ttf');
+}
+
+*{
+  margin: 0;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
